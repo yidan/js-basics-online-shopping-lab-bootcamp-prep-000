@@ -58,7 +58,7 @@ function total() {
 
     return sum + item[Object.keys(item)[0]]
   },0)
-)
+}
 
 function removeFromCart(item) {
   // write your code here

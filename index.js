@@ -35,7 +35,7 @@ function viewCart() {
     if (cart.length == 1){
       s += key+ " at $" + price +"."
     } else if (cart.length == 2 && i== cart.length - 1){
-      s = s.slice(0,02);
+      s = s.slice(0,-2);
       s += " and " + key+ " at $" + price +"."
 
     } else if (i== cart.length - 1){

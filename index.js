@@ -31,7 +31,7 @@ function viewCart() {
     let item = cart[i]
 
     if (cart.length == 1){
-      s += item.keys()[0] + " at $" + item.values()[0] +"."
+      s += Object.keys(item)[0] + " at $" + Object.values(item)[0] +"."
     } else if (i== cart.length - 1){
       s += "and" + item.keys()[0] + " at $" + item.values()[0] +"."
     } else {

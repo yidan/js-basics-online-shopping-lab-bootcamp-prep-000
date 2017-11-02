@@ -31,11 +31,11 @@ function viewCart() {
     let item = cart[i]
 
     if (cart.length == 1){
-      s += Object.keys(item)[0] + " at $" + Object.values(item)[0] +"."
+      s += Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]] +"."
     } else if (i== cart.length - 1){
-      s += "and" + Object.keys(item)[0] + " at $" + Object.values(item)[0] +"."
+      s += "and" + Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]]  +"."
     } else {
-        s += Object.keys(item)[0] + " at $" + Object.values(item)[0] +", "
+        s += Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]] +", "
     }
 
   }

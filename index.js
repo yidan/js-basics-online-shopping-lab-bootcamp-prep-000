@@ -29,7 +29,7 @@ function viewCart() {
     let s = "In your cart, you have "
   for (let i=0; i<cart.length;i++){
     let item = cart[i]
-    let key = Object.keys(item)[0] 
+    let key = Object.keys(item)[0]
     let price = item[key]
 
     if (cart.length == 1){

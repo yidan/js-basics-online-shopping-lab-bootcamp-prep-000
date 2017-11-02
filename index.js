@@ -29,13 +29,19 @@ function viewCart() {
     let s = "In your cart, you have "
   for (let i=0; i<cart.length;i++){
     let item = cart[i]
+    let key = Object.keys(item)[0] 
+    let price = item[key]
 
     if (cart.length == 1){
-      s += Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]] +"."
+      s += key+ " at $" + price +"."
+    } else if (cart.length == 2 && i== cart.length - 1){
+      s = s.slice(0,02);
+      s += " and " + key+ " at $" + price +"."
+
     } else if (i== cart.length - 1){
-      s += "and" + Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]]  +"."
+      s += "and " + key + " at $" +  price +"."
     } else {
-        s += Object.keys(item)[0] + " at $" + item[Object.keys(item)[0]] +", "
+        s += key + " at $" + price +", "
     }
 
   }

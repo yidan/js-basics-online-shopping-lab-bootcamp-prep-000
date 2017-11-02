@@ -55,6 +55,7 @@ console.log(s)
 function total() {
   // write your code here
   return cart.reduce(function(sum,item){
+    console.log(item)
     return sum + item[Object.keys(item)[0]]
   })
 ,0}
